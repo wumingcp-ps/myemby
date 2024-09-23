@@ -9,7 +9,7 @@ fi
 
 echo "Mount the qnap using environment variables"
 mkdir /qnap
-mount -t cifs //$SMB_SERVER/$SMB_SHARE /qnap -o username=$SMB_USER,password=$SMB_PASS,vers=2.0
+mount -t cifs //$SMB_SERVER/$SMB_SHARE /qnap -o username=$SMB_USER,password=$SMB_PASS,vers=3.0,iocharset=utf8,file_mode=0777,dir_mode=0777
 
 if [ $? -eq 0 ]; then
   echo "Mounted qnap successfully."
