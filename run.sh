@@ -17,3 +17,5 @@ else
   echo "Failed to mount qnap."
   exit 1
 fi
+
+/init
